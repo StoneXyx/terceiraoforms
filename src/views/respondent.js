@@ -47,7 +47,7 @@ export async function respondent(id){
     else if(done){st=[h('div',{},ic('auto_awesome','spk'),ic('thumb_up','big-ic'),ic('auto_awesome','spk')),h('h2',{class:'qt'},f.thanks||'Recebemos sua resposta!'),h('p',{class:'mut'},'Obrigado por participar.')]}
     else{const q=qs[i];st=[h('div',{class:'qc'},'Pergunta '+(i+1)+'/'+qs.length),h('h2',{class:'qt'},q.text+(q.required?' *':'')),input(q),h('div',{class:'err',id:'err'}),
       h('div',{class:'nav'},h('button',{class:'ib',onclick:prev},ic('arrow_back'),'Anterior'),h('button',{class:'p',onclick:next},target()>=qs.length?'Enviar':'Próximo',ic('arrow_forward')))]}
-    const main=h('section',{class:'main'},h('div',{class:'stage'},st),h('div',{class:'foot'},h('span',{},'Feito com Perguntei'),h('span',{},done?'':'Shift+Enter: nova linha')));
+    const main=h('section',{class:'main'},h('div',{class:'stage'},st),h('div',{class:'foot'},h('span',{},'Feito pelo Terceirão FN'),h('span',{},done?'':'Shift+Enter: nova linha')));
     root.replaceChildren(h('div',{class:'blob'}),h('div',{class:'blob b2'}),h('div',{class:'shell'},side,main));
   }
   if(window.__kh)removeEventListener('keydown',window.__kh);
